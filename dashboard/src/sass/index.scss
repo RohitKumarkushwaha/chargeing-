@@ -1,0 +1,68 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.mapDiv {
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+}
+
+.input-edit-station {
+    width: 50%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #999;
+
+    &:focus {
+        outline: 1px solid #bbb;
+    }
+}
+
+.marker-icon {
+    background-position: center;
+    background-size: 22px 22px;
+    border-radius: 50%;
+    height: 22px;
+    left: 4px;
+    position: absolute;
+    text-align: center;
+    top: 3px;
+    transform: rotate(45deg);
+    width: 22px;
+}
+.marker {
+    height: 25px;
+    width: 25px;
+
+    &:hover {
+        cursor: pointer;
+    }
+}
+.marker-content {
+    border-radius: 50% 50% 50% 0;
+    left: 50%;
+    margin: -15px 0 0 -15px;
+    position: absolute;
+    top: 50%;
+    transform: rotate(-45deg);
+    height: 25px;
+    width: 25px;
+}
+.marker-content::before {
+    border-radius: 50%;
+    content: "";
+    height: 24px;
+    margin: 3px 0 0 3px;
+    position: absolute;
+    width: 24px;
+}
+
+.textarea {
+    resize: none;
+    overflow: auto;
+}
